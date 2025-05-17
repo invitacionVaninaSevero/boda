@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Sevillana&display=swap" rel="stylesheet" />
+    <!-- CSS de Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- jQuery (Slick depende de jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JS de Slick -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <!-- Música de fondo y control -->
+    <div class="music-control">
+      <button id="music-button" onclick="toggleMusic()">
+        <i id="music-icon" class="fa fa-play"></i>
+      </button>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+      <source src="music/song.mp3" type="audio/mpeg" />
+      Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <!-- Header -->
+    <header>
+      <div class="overlay"></div>
+      <div class="header-content">
+        <h1 style="color: #ffffff; font-size: 60px">Nos Casamos!</h1>
+        <h1 style="color: #ffffff">Luisa & Jose</h1>
+        <div id="fh5co-save-date" class="fh5co-bg" style="padding: 60px 0">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center fh5co-heading animate-box">
+                <h2 style="color: #ffffff; font-size: 36px; margin-bottom: 10px">¡Guarda esta fecha!</h2>
+                <h3 style="color: #ffffff; font-size: 28px; margin-bottom: 5px">Mayo 16, 2025</h3>
+                <!-- <h2 style="color: #ffffff; font-size: 36px; margin-bottom: 10px">Faltan:</h2>
+                <div class="row justify-content-center">
+                  <div class="col-md-8 text-center">
+                    
+                    <div id="countdown" class="countdown-timer">
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <div id="countdown" style="font-size: 24px; color:  #d55353; margin-top: 20px"></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="frase">
+       <p>Todos somos mortales, hasta el primer beso <br> y la segunda copa de vino</p>
+    </section>
+ 
+
+   <section id="details" class="details">
+        <div class="container">
+               <div class="onda-fina">
+  <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="#e63946" opacity="0.3"></path>
+  </svg>
+</div>
+            <h2 class="section-title">Ceremonia</h2>
+                  <div class="onda-separadora">
+  <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#e63946" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,58.7C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z"></path>
+  </svg>
+</div>
+
+            <!-- <div class="details-grid">
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Dia</h3>
+                        <p><b>"Chacra..."</b> - Direccion especifica</p>
+                        <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/JPHSY8HuACPpVpwg8"><button
+                            class="submit-btn">VER MAPA</button></a>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Lugar</h3>
+                        <p>Desde ... hasta ... hrs</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="dress-code">
+                <div class="icon">
+              <i class="fas fa-ring"></i>
+
+                </div>
+                <h3>Dia</h3>
+                <p>10 de Mayo de 2025</p>
+            </div>
+            
+            <div class="dress-code">
+                <div class="icon">
+                   <i class="fas fa-glass-cheers"></i>
+
+                </div>
+                <h3>Lugar</h3>
+                <p>Registro civil</p>
+                  <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/JPHSY8HuACPpVpwg8"><button
+                            class="btn">CONFIRMAR ASISTENCIA</button></a>
+                
+            </div>
+            
+            <div class="dress-code">
+                <div class="icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Dirección</h3>
+                <p>Avenida Uruguay 933</p>
+                 <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/JPHSY8HuACPpVpwg8"><button
+                            class="btn">VER MAPA</button></a>
+            </div>
+        </div>
+    </section>
+     <section id="details" class="details">
+        <div class="container">
+               <div class="onda-fina">
+  <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="#e63946" opacity="0.3"></path>
+  </svg>
+</div>
+            <h2 class="section-title">Celebración</h2>
+            <div class="onda-separadora">
+  <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#e63946" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,58.7C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z"></path>
+  </svg>
+</div>
+
+            <!-- <div class="details-grid">
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Dia</h3>
+                        <p><b>"Chacra..."</b> - Direccion especifica</p>
+                        <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/JPHSY8HuACPpVpwg8"><button
+                            class="submit-btn">VER MAPA</button></a>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Lugar</h3>
+                        <p>Desde ... hasta ... hrs</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="dress-code">
+                <div class="icon">
+                   <i class="fas fa-ring"></i>
+
+
+                </div>
+                <h3>Dia</h3>
+                <p>16 de Mayo de 2025</p>
+            </div>
+            
+            <div class="dress-code">
+                <div class="icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <h3>Lugar</h3>
+                <p>Chacra La Tradición</p>
+                  <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/JPHSY8HuACPpVpwg8"><button
+                            class="btn">CONFIRMAR ASISTENCIA</button></a>
+                
+            </div>
+            
+            <div class="dress-code">
+                <div class="icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Dirección</h3>
+                <p>Camino Garces 7182</p>
+                 <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/JPHSY8HuACPpVpwg8"><button
+                            class="btn">VER MAPA</button></a>
+            </div>
+        </div>
+         <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#e63946" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,58.7C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z"></path>
+  </svg>
+    </section>
+
+    <!-- <section id="gifts" class="gifts">
+        <div class="container">
+            <h2 class="section-title">¿Querés regalarme algo?</h2>
+            <div class="gifts-content">
+                <div class="gift-options">
+                    <div class="gift-card">
+                        <div class="icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Transferencia Bancaria</h3>
+                        <p>COLECTIVO ABITAB ...</p>
+                        <p>Brou CA $ ....-00001</p>
+                        <p>Brou CA US$ ....-00002</p>
+                        <p>Destinatario ....</p>
+                    
+                    </div>
+                </div>
+                <div class="gift-message">
+                    <p>Lo que más valoro es que compartas este día conmigo</p>
+                </div> 
+            </div>
+        </div>
+    </section> -->
+  <!-- Tarjeta Regalo -->
+ <!-- Tarjeta Regalo -->
+<body>
+
+  <!-- Contenedor centrado -->
+  <div class="contenedor-centrado">
+    <div class="card">
+      <!-- <h3 class="titulo-detalle">REGALITO</h3> -->
+      <div class="text-5xl text-purple-300 mb-4">
+        <i class="fas fa-gift"></i>
+      </div>
+      <p class="mb-6 text-black">¿Querés hacernos un regalo?</p>
+      <button id="mostrar-cvu" class="boton-detalles">
+        Cuenta Bancaria
+      </button>
+
+      <!-- <div id="cvu-info" class="hidden">
+        <p><strong>CVU:</strong> 
+          <span>0000003100038284769298</span>
+        </p>
+        <p><strong>Alias:</strong> 
+          <span>Rena.xv.mp</span>
+        </p>
+        <p>¡Gracias por tu cariño! 💖</p>
+      </div> -->
+    </div>
+  </div>
+
+</body>
+
+    <section class="carrusel">
+  <div class="carrusel-imagenes" id="carrusel-imagenes">
+    <img src="images/pexels-rdne-6709054.jpg" alt="Imagen 1">
+    <img src="images/pexels-rdne-6708940.jpg" alt="Imagen 2">
+    <img src="images/pexels-rdne-6708835.jpg" alt="Imagen 3">
+  </div>
+  <button class="boton izquierda" onclick="moverCarrusel(-1)">❮</button>
+  <button class="boton derecha" onclick="moverCarrusel(1)">❯</button>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Luisa y Jose</h2>
+                <p>¡Nos casamos!</p>
+                <div class="heart-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/ferra.giu/" class="social-link"><i
+                        class="fab fa-instagram"></i></a>
+            </div> 
+
+            <div class="footer-info">
+                <p>16 de Mayo de 2025</p>
+                <!-- <p>Con amor, Vani.</p> -->
+                <p class="copyright">© <span id="currentYear"></span> - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+ <script src="functions.js"></script>
